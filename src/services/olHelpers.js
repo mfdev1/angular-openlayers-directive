@@ -321,6 +321,7 @@ angular.module('openlayers-directive').factory('olHelpers', function($q, $log, $
                         resolutions: source.tileGrid.resolutions,
                         matrixIds: source.tileGrid.matrixIds
                     }),
+                    tilePixelRatio: source.tilePixelRatio || 1,
                     style: (source.style === 'undefined') ? 'normal' : source.style,
                     wrapX: source.wrapX !== undefined ? source.wrapX : true
                 };
